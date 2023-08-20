@@ -24,3 +24,5 @@ val deptDF = Seq(
 |Left anti-join |Return rows only from the left dataset when the join expression evaluates as false.|
 |Left semi-join |Return rows only from the left dataset when the join expression evaluates to true.|
 |Cross (a.k.a. Cartesian) |Return rows by combining each row from the left dataset with each row in the right dataset. the number of rows is a product of the size of each dataset.|
+
+employeeDF.crossJoin(deptDF).count
